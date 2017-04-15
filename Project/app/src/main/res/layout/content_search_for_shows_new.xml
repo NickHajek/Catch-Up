@@ -69,9 +69,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/New"
-        android:layout_width="276dp"
-        android:layout_height="177dp"
+        android:id="@+id/NewLayout"
+        android:layout_width="289dp"
+        android:layout_height="246dp"
         android:layout_marginLeft="38dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="154dp"
@@ -80,35 +80,42 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <CheckBox
-            android:id="@+id/checkBox9"
+        <Button
+            android:id="@+id/Legion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Flash" />
+            android:text="Legion"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox11"
+        <Button
+            android:id="@+id/westworld"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Orange is the new Black" />
+            android:text="Westworld"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox10"
+        <Button
+            android:id="@+id/taboo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Walking Dead season 12" />
+            android:text="Taboo"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox7"
+        <Button
+            android:id="@+id/reasonswhy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stranger Things" />
+            android:text="13 reasons why"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox8"
+        <Button
+            android:id="@+id/thecrown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="The Magician" />
+            android:text="The crown"
+            android:onClick="topicChosen"/>
+
+
     </LinearLayout>
 
 

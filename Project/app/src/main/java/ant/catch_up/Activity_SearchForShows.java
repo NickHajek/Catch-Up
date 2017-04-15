@@ -7,9 +7,12 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.Button;
+
 
 public class Activity_SearchForShows extends AppCompatActivity {
+    String xx = "";
+    String yy = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,12 @@ public class Activity_SearchForShows extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Intent screen3 = new Intent(this, Activity_UserProfile.class);
+        Bundle extras = getIntent().getExtras();
+        xx = extras.getString("xx");
+        yy = extras.getString("yy");
+
+
 
 
     }
@@ -36,6 +45,8 @@ public class Activity_SearchForShows extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);
     }
 
@@ -44,6 +55,8 @@ public class Activity_SearchForShows extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);    }
 
     public void startNew(View v){
@@ -51,6 +64,8 @@ public class Activity_SearchForShows extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);
     }
 
@@ -59,16 +74,34 @@ public class Activity_SearchForShows extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("1",extras.getString("1"));
+        screen3.putExtra("2",extras.getString("2"));
         startActivity(screen3);
 
     }
+
 
     public void callUserProfile(View v){
         Intent screen3 = new Intent(this, Activity_UserProfile.class);
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);
+    }
+
+
+    public void topicChosen(View v){
+        Intent screen3 = new Intent(this, Activity_UserProfile.class);
+        Bundle extras = getIntent().getExtras();
+        String Value = extras.getString("name");
+        screen3.putExtra("name", Value);
+        Button b = (Button)v;
+        String buttontext = b.getText().toString();
+        String temp = xx;
+        xx = buttontext;
+        yy = temp;
     }
 
 
