@@ -10,17 +10,123 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="71dp" />
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:text="Add new tag"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="433dp" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="129dp"
-        android:layout_height="36dp"
-        android:text="it actually works"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="246dp" />
+        android:layout_width="325dp"
+        android:layout_height="52dp"
+        android:text="# Game of Thrones"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tagLabel_Genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genres"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <TextView
+        android:id="@+id/genreTag_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# Fantasy"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/genreTag_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# Action"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <TextView
+        android:id="@+id/tagLabel_Network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/networkTag_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# HBO"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <TextView
+        android:id="@+id/label_showProgress"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:text="Most Recent Watched"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <TextView
+        android:id="@+id/label_progressSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Season"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <TextView
+        android:id="@+id/label_progressEpisode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Episode"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/display_Season"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(X)"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <TextView
+        android:id="@+id/display_Episode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Y)"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/label_TTR"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:text="Total time remaining"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <TextView
+        android:id="@+id/display_TTR"
+        android:layout_width="108dp"
+        android:layout_height="21dp"
+        android:text="(A) hrs. (B) min."
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On My Watch List  "
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="452dp" />
+
 </android.support.constraint.ConstraintLayout>
