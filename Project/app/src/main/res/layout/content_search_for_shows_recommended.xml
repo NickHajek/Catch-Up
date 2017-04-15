@@ -69,8 +69,8 @@
 
     <LinearLayout
         android:id="@+id/Recommended"
-        android:layout_width="275dp"
-        android:layout_height="179dp"
+        android:layout_width="280dp"
+        android:layout_height="249dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="166dp"
         android:orientation="vertical"
@@ -78,35 +78,41 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <CheckBox
-            android:id="@+id/checkBox17"
+        <Button
+            android:id="@+id/Houseofcards"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="House of Cards"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox16"
+        <Button
+            android:id="@+id/TwinPeaks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="Twin Peaks"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox15"
+        <Button
+            android:id="@+id/BreakingBad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="Breaking Bad"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox14"
+        <Button
+            android:id="@+id/StrangerThings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="Stranger Things"
+            android:onClick="topicChosen"/>
 
-        <CheckBox
-            android:id="@+id/checkBox13"
+        <Button
+            android:id="@+id/BlackMirror"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:onClick="topicChosen"
+            android:text="Black Mirror" />
+
     </LinearLayout>
 
 

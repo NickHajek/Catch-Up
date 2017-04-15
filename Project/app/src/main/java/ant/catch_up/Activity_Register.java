@@ -28,10 +28,13 @@ public class Activity_Register extends AppCompatActivity {
         });
     }
 
+
     public void callWhatShow(View v){
         String myName = ((EditText)findViewById(R.id.EnterUserName)).getText().toString();
         Intent screen3 = new Intent(this, Activity_SearchForShows.class);
         screen3.putExtra("name", myName);
+        screen3.putExtra("xx", "");
+        screen3.putExtra("yy", "");
         startActivity(screen3);
     }
 

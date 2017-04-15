@@ -7,9 +7,11 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 public class SearchForShowsNew extends AppCompatActivity {
-
+    String xx = "";
+    String yy = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,10 @@ public class SearchForShowsNew extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Intent screen3 = new Intent(this, Activity_UserProfile.class);
+        Bundle extras = getIntent().getExtras();
+        xx = extras.getString("xx");
+        yy = extras.getString("yy");
     }
 
     public void startPopular(View v){
@@ -32,6 +38,8 @@ public class SearchForShowsNew extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);
     }
 
@@ -40,6 +48,8 @@ public class SearchForShowsNew extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);    }
 
     public void startNew(View v){
@@ -47,23 +57,46 @@ public class SearchForShowsNew extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);
     }
 
-    public void callGOTSeason(View v){
-        Intent screen3 = new Intent(this, Activity_SelectSeason.class);
-        Bundle extras = getIntent().getExtras();
-        String Value = extras.getString("name");
-        screen3.putExtra("name", Value);
-        startActivity(screen3);
-
-    }
 
     public void callUserProfile(View v){
         Intent screen3 = new Intent(this, Activity_UserProfile.class);
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         screen3.putExtra("name", Value);
+        screen3.putExtra("xx", xx);
+        screen3.putExtra("yy", yy);
         startActivity(screen3);
     }
+    public void topicChosen(View v){
+        Intent screen3 = new Intent(this, Activity_UserProfile.class);
+        Bundle extras = getIntent().getExtras();
+        String Value = extras.getString("name");
+        screen3.putExtra("name", Value);
+        Button b = (Button)v;
+        String buttontext = b.getText().toString();
+        String temp = xx;
+        xx = buttontext;
+        yy = temp;
+    }
+
+
+
+    public void callGOTSeason(View v){
+        Intent screen3 = new Intent(this, Activity_SelectSeason.class);
+        Bundle extras = getIntent().getExtras();
+        String Value = extras.getString("name");
+        screen3.putExtra("name", Value);
+        String xx =  extras.getString("xx");
+        screen3.putExtra("xx", xx);
+        String zz = extras.getString("zz");
+        screen3.putExtra("zz", zz);;
+        startActivity(screen3);
+
+    }
+
 }
