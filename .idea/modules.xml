@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/catchup.iml" filepath="$PROJECT_DIR$/.idea/catchup.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/CatchUp.iml" filepath="$PROJECT_DIR$/CatchUp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+>>>>>>> ac8bd86e19091e62dffecaa2678409e4ee33e1e8
     </modules>
   </component>
 </project>

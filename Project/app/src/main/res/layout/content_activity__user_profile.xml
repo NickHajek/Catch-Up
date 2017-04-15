@@ -232,4 +232,15 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/DiscussShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="189dp"
+        android:layout_marginTop="460dp"
+        android:onClick="gotoFeed"
+        android:text="Discuss Show"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

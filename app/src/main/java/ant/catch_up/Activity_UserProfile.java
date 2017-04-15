@@ -33,40 +33,6 @@ public class Activity_UserProfile extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String Value = extras.getString("name");
         N.setText(Value, TextView.BufferType.EDITABLE);
-        Button button1 = (Button)findViewById(R.id.ButtonClicked1);
-        Button button2 = (Button)findViewById(R.id.ButtonClicked2);
-        String Value1 = extras.getString("xx");
-        String Value2 = extras.getString("yy");
-        button1.setText(Value1);
-        button2.setText(Value2);
 
     }
-
-    public void callShows(View v)
-    {
-        Intent screen3 = new Intent(this, Activity_SearchForShows.class);
-        Bundle extras = getIntent().getExtras();
-        String Value = extras.getString("name");
-        screen3.putExtra("name", Value);
-        String xx =  extras.getString("xx");
-        screen3.putExtra("xx", xx);
-        String zz = extras.getString("zz");
-        screen3.putExtra("zz", zz);
-        startActivity(screen3);
-    }
-
-
-    public void gotoFeed(View v){
-        Intent screen3 = new Intent(this, Activity_ShowFeed.class);
-        Bundle extras = getIntent().getExtras();
-        String Value = extras.getString("name");
-        screen3.putExtra("name", Value);
-        String xx =  extras.getString("xx");
-        screen3.putExtra("xx", xx);
-        String zz = extras.getString("zz");
-        screen3.putExtra("zz", zz);
-        startActivity(screen3);
-
-    }
-
 }
