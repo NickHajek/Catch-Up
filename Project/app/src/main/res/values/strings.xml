@@ -15,4 +15,13 @@
     <string name="title_activity__search_for_ashow_with_tags">Activity_SearchForAShowWithTags
     </string>
     <string name="title_activity__user_profile">Activity_UserProfile</string>
+
+    <string name="password">password</string>
+    <string name="email">Email</string>
+    <string name="Allshow">All the show. None of the Spoilers.</string>
+    <string name="catchup">CatchUP</string>
+    <string name="Next">Next</string>
+    <string name="newCreate">New? create New</string>
+    <string name="myName">name</string>
+
 </resources>

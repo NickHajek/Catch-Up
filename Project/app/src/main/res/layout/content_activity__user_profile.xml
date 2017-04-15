@@ -8,4 +8,12 @@
     tools:context="ant.catch_up.Activity_UserProfile"
     tools:showIn="@layout/activity__user_profile">
 
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="54dp" />
 </android.support.constraint.ConstraintLayout>

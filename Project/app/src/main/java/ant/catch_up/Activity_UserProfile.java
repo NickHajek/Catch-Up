@@ -6,6 +6,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.content.Intent;
+import android.widget.TextView;
 
 public class Activity_UserProfile extends AppCompatActivity {
 
@@ -24,6 +26,13 @@ public class Activity_UserProfile extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        TextView N = (TextView)findViewById(R.id.Name);
+
+        Intent screen3 = new Intent(this, Activity_UserProfile.class);
+        Bundle extras = getIntent().getExtras();
+        String Value = extras.getString("name");
+        N.setText(Value, TextView.BufferType.EDITABLE);
+
     }
 
 }

@@ -8,13 +8,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity__login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -30,7 +31,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void callRegisterPage(View view) {
-        Intent i=new Intent(Login.this, RegisterActivity.class);
+        Intent i=new Intent(Login.this, Activity_Register.class);
         startActivity(i);
     }
 

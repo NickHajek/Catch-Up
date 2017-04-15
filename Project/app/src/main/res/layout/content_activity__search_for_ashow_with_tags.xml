@@ -8,4 +8,19 @@
     tools:context="ant.catch_up.Activity_SearchForAShowWithTags"
     tools:showIn="@layout/activity__search_for_ashow_with_tags">
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="129dp"
+        android:layout_height="36dp"
+        android:text="it actually works"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="246dp" />
 </android.support.constraint.ConstraintLayout>

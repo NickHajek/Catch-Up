@@ -6,13 +6,20 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.content.Intent;
 
 public class Activity_Login extends AppCompatActivity {
 
     public void callRegisterPage(View view) {
-        Intent i=new Intent(Activity_Login.this, Activity_Register.class);
-        startActivity(i);
+        Intent nxtscreen = new Intent(Activity_Login.this, Activity_Register.class);
+        startActivity(nxtscreen);
     }
+
+    public void callWhatShow(View v){
+        Intent nxtscreen = new Intent(Activity_Login.this, Activity_SearchForShows.class);
+        startActivity(nxtscreen);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +37,7 @@ public class Activity_Login extends AppCompatActivity {
             }
         });
     }
+
+
 
 }
