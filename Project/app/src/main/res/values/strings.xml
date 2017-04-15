@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Catch-Up</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_show_selection">ShowSelectionActivity</string>
+    <string name="title_activity_specific_show_menu">SpecificShowMenuActivity</string>
+    <string name="title_activity_specific_show_feed">SpecificShowFeed</string>
+    <string name="title_activity_search_for_ashow_with_tags">SearchForAShowWithTagsActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity__login">Activity_Login</string>
+    <string name="title_activity__register">Activity_Register</string>
+    <string name="title_activity__search_for_shows">Activity_SearchForShows</string>
+    <string name="title_activity__select_season">Activity_SelectSeason</string>
+    <string name="title_activity__show_feed">Activity_ShowFeed</string>
+    <string name="title_activity__search_for_ashow_with_tags">Activity_SearchForAShowWithTags
+    </string>
+    <string name="title_activity__user_profile">Activity_UserProfile</string>
+</resources>
