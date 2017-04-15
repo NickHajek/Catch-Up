@@ -70,6 +70,14 @@
         <activity
             android:name=".Activity_UserProfile"
             android:label="@string/title_activity__user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchForShowsNew"
+            android:label="@string/title_activity_search_for_shows_new"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchForShowsRecommended"
+            android:label="@string/title_activity_search_for_shows_recommended"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -35,4 +35,10 @@ public class Activity_UserProfile extends AppCompatActivity {
 
     }
 
+    public void callShows(View v)
+    {
+        Intent screen2 = new Intent(this, Activity_SearchForShows.class);
+        startActivity(screen2);
+    }
+
 }

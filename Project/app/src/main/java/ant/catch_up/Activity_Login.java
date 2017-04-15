@@ -10,14 +10,14 @@ import android.content.Intent;
 
 public class Activity_Login extends AppCompatActivity {
 
-    public void callRegisterPage(View view) {
-        Intent nxtscreen = new Intent(Activity_Login.this, Activity_Register.class);
-        startActivity(nxtscreen);
+    public void callRegisterPage(View v) {
+        Intent screen2 = new Intent(Activity_Login.this, Activity_Register.class);
+        startActivity(screen2);
     }
 
-    public void callWhatShow(View v){
-        Intent nxtscreen = new Intent(Activity_Login.this, Activity_SearchForShows.class);
-        startActivity(nxtscreen);
+    public void callWhatShow(View v) {
+        Intent screen2 = new Intent(Activity_Login.this, Activity_SearchForShows.class);
+        startActivity(screen2);
     }
 
 
