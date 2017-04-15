@@ -32,7 +32,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="viewRegister"
+        android:onClick="callRegisterPage"
         android:text="New? Register!"
         tools:layout_editor_absoluteX="126dp"
         tools:layout_editor_absoluteY="389dp" />
