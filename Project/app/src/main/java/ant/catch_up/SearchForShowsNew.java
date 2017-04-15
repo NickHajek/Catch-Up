@@ -7,14 +7,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.LinearLayout;
 
-public class Activity_SearchForShows extends AppCompatActivity {
+public class SearchForShowsNew extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__search_for_shows);
+        setContentView(R.layout.activity_search_for_shows_new);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,10 +25,7 @@ public class Activity_SearchForShows extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-
     }
-
 
     public void startPopular(View v){
         Intent screen3 = new Intent(this, Activity_SearchForShows.class);
@@ -70,6 +66,4 @@ public class Activity_SearchForShows extends AppCompatActivity {
         screen3.putExtra("name", Value);
         startActivity(screen3);
     }
-
-
 }

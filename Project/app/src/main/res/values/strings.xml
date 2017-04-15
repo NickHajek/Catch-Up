@@ -23,5 +23,7 @@
     <string name="Next">Next</string>
     <string name="newCreate">New? create New</string>
     <string name="myName">name</string>
+    <string name="title_activity_search_for_shows_new">SearchForShowsNew</string>
+    <string name="title_activity_search_for_shows_recommended">SearchForShowsRecommended</string>
 
 </resources>
