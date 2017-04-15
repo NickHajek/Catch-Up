@@ -29,10 +29,7 @@ public class Activity_Login extends AppCompatActivity {
 
 
     public void callRegisterPage(View v) {
-        //Intent nxtscreen = new Intent(Activity_Login.this, Activity_Register.class);
-        //startActivity(nxtscreen);
-
-        Intent nxtscreen = new Intent(this, Activity_SearchForShows.class);
+        Intent nxtscreen = new Intent(Activity_Login.this, Activity_SearchForShows.class);
         startActivity(nxtscreen);
     }
 
@@ -46,13 +43,4 @@ public class Activity_Login extends AppCompatActivity {
         //nxtscreen.putExtra("name", value);
         //startActivity(nxtscreen);
     //}
-
-    public void callUserProfile(View v){
-        Intent screen3 = new Intent(this, Activity_UserProfile.class);
-        Bundle extras = getIntent().getExtras();
-        String Value = extras.getString("name");
-        screen3.putExtra("name", Value);
-        startActivity(screen3);
-    }
-
 }
