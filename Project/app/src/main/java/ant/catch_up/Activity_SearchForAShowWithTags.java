@@ -7,26 +7,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Activity_SearchForAShowWithTags extends AppCompatActivity {
 
     // create a Hash Map (sorta like a Python dictionary)
     // for adding total reamining run time in a series
 
-    Map GoTMap = new HashMap();
+
+    String[][] GoT = {{"", "", "", "", "", "", "", "", "", ""},{"61", "55", "57", "55", "54", "52", "57", "58", "56", "52"}};
         // syntax: map key == season.episode (eg, 1.2 = season 1, episode 2)
         //         map value == run time, in minutes
         // there may be some errors here, I'm getting some red squiggly ilnes...
 
-    GoTMap.put(1.1, new int (61));
-    GoTMap.put(1.2, new int (55));
-    GoTMap.put(1.3, new int (57));
-    GoTMap.put(1.4, new int (55));
-    GoTMap.put(1.5, new int (54));
-    GoTMap.put(1.6, new int (52));
-    GoTMap.put(1.7, new int (57));
-    GoTMap.put(1.8, new int (58));
-    GoTMap.put(1.9, new int (56));
-    GoTMap.put(1.10, new int (52));
+
+
 
     // display_Season.setText(VARIABLE FROM OTHER ACTIVITY- what season am I on?)
     // display_Episode.setText(VARIABLE FROM ANOTHER ACTIVITY - what episode am I on?)

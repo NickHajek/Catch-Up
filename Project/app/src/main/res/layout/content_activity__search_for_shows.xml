@@ -85,31 +85,31 @@
             android:id="@+id/checkBox6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Silcon Valley" />
+            android:text="Game of Thrones" />
 
         <CheckBox
             android:id="@+id/checkBox5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="Silcon Valley" />
 
         <CheckBox
             android:id="@+id/checkBox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="Flash" />
 
         <CheckBox
             android:id="@+id/checkBox3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="Walking Dead" />
 
         <CheckBox
             android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="The Magicians" />
     </LinearLayout>
 
 
