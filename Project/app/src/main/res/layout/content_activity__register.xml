@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ant.catch_up.Activity_Register"
+    tools:showIn="@layout/activity__register">
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="462dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="39dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="43dp">
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enter Your Email"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="170dp" />
+
+        <EditText
+            android:id="@+id/EnterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="User Name:"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/EnterUserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+        <TextView
+            android:id="@+id/EnterYourPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:text="Enter Your Password"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <EditText
+            android:id="@+id/EnterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/ConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Confirm Password"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+        <EditText
+            android:id="@+id/enterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/Next1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="callWhatShow"
+            android:text="Next"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

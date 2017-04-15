@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ant.catch_up.SearchForShowsRecommended"
+    tools:showIn="@layout/activity_search_for_shows_recommended">
+    <TextView
+        android:id="@+id/WhatShows"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="What Shows Do you Watch?"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="38dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="219dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="421dp"
+        android:onClick="callUserProfile"
+        android:text="User Profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="73dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="14dp"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startPopular"
+            android:text="Popular" />
+
+        <Button
+            android:id="@+id/New"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startNew"
+            android:text="New" />
+
+        <Button
+            android:id="@+id/Recommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startRecommended"
+            android:text="Recommended" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Recommended"
+        android:layout_width="280dp"
+        android:layout_height="249dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="166dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Houseofcards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="House of Cards"
+            android:onClick="topicChosen"/>
+
+        <Button
+            android:id="@+id/TwinPeaks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twin Peaks"
+            android:onClick="topicChosen"/>
+
+        <Button
+            android:id="@+id/BreakingBad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breaking Bad"
+            android:onClick="topicChosen"/>
+
+        <Button
+            android:id="@+id/StrangerThings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stranger Things"
+            android:onClick="topicChosen"/>
+
+        <Button
+            android:id="@+id/BlackMirror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="topicChosen"
+            android:text="Black Mirror" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
